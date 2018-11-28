@@ -1,0 +1,32 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 774px;
+  padding-bottom: 120px;
+  background-color: #4959a9;
+  background-image: linear-gradient(-30deg, #00cec0 0%, #672aa0 99%, #672aa0 100%);
+}
+
+.intro__title {
+  margin-bottom: 40px;
+  color: #fff;
+  font-size: 55px;
+  font-weight: 800;
+}
+
+.intro__social-list {
+  @include reset-list;
+  display: flex;
+  margin: 0 -3px;
+}
+
+.intro__social-item {
+  width: 45px;
+  height: 45px;
+  margin: 0 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0,0,0,.2);
+}

@@ -1,0 +1,17 @@
+.main-header {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+}
+
+.main-header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-header__rightside {
+  display: flex;
+  align-items: center;
+}
