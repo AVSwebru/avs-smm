@@ -1,0 +1,23 @@
+.contacts-form__row {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.contacts-form__icon {
+  width: 48px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid #2f2f2f;
+  border-left: 1px solid #2f2f2f;
+  border-bottom: 1px solid #2f2f2f;
+}
+
+.contacts-form__input {
+  height: 46px;
+  border: 1px solid #2f2f2f;
+  &:focus {
+    border-color: #2f2f2f;
+  }
+}

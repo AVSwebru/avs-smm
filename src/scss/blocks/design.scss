@@ -1,0 +1,9 @@
+.design {
+  padding-bottom: 100px;
+}
+
+.design__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(235px, 360px));
+  grid-column-gap: 30px;
+}

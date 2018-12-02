@@ -1,40 +1,50 @@
-.feedback-btn {
+.button {
   @include reset-btn;
+  @include reset-link;
   position: relative;
-  min-width: 200px;
+  display: inline-block;
+  width: 166px;
+  max-width: 100%;
   box-sizing: border-box;
-  padding: 11px;
-  color: #fff;
-  font-size: 13px;
+  padding: 18px;
+  font-size: 12px;
   font-weight: 500;
+  line-height: 1;
   text-transform: uppercase;
-  background-color: rgba(255,255,255,.2);
-  border: 1px solid #fff;
-  letter-spacing: 1.4px;
+  text-align: center;
   overflow: hidden;
   cursor: pointer;
+  &_type_design {
+    color: #000;
+    background-color: #34e0d2;
+  }
+  &_type_tariff {
+    color: #fff;
+    background-color: #0b0b0b;
+  }
+  &_type_contacts {
+    color: #fff;
+    background-color: #672aa0;
+  }
+  &_type_blog {
+    color: #000;
+    background-color: #48e3d6;
+  }
   &:hover {
     border-image: linear-gradient(-225deg, #00dccd 0%, #6f2eab 99%, #6f2eab 100%) 1/1px;
-    .feedback-btn__background  {
+    .button__background {
       transform: translateY(0);
       transition: transform 0.25s;
     }
   }
-  &_adapt {
-    left: 50%;
-    width: 280px;
-    border: 1px solid #a3a3a3;
-    color: #363636;
-    transform: translateX(-50%);
-  }
 }
 
-.feedback-btn__text {
+.button__text {
   position: relative;
   z-index: 1;
 }
 
-.feedback-btn__background {
+.button__background {
   position: absolute;
   top: 0;
   right: 0;

@@ -1,0 +1,31 @@
+.contacts {
+  padding: 80px 0;
+  background: url('../../img/bg-contacts.png') 100% 0 no-repeat;
+  background-size: 50% 100%;
+}
+
+.contacts__wrapper {
+  display: grid;
+  grid-template-columns: 340px 220px;
+  grid-column-gap: 95px;
+}
+
+.contacts__text {
+  margin-bottom: 20px;
+}
+
+.contacts__item {
+  margin-bottom: 45px;
+}
+
+.contacts__info {
+  @include reset-link;
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+  &:hover {
+    color: #000;
+  }
+}
