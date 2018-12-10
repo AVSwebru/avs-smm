@@ -1,0 +1,21 @@
+.home__services {
+  padding-top: 65px;
+  @media (max-width: $breakpoint-medium) {
+    padding-top: 50px;
+  }
+  @media (max-width: $breakpoint-small) {
+    padding-top: 35px;
+  }
+}
+
+.home__section-title {
+  margin: 0 0 25px;
+  color: #646363;
+  font-size: 36px;
+  @media (max-width: $breakpoint-medium) {
+    font-size: 30px;
+  }
+  @media (max-width: $breakpoint-small) {
+    font-size: 24px;
+  }
+}

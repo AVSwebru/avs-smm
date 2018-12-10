@@ -13,61 +13,79 @@
   &_type_2 {
     background: #4c55a9 linear-gradient(to top, #4c55a9 0%, #8a69dc 100%) 50% 50% no-repeat;
     background-size: cover;
-    .tariff-item__item:first-child {
-      color: #f27030;
+    .tariff-item__item:first-child::before {
+      background-color: #f27030;
     }
   }
   &_type_3 {
     background: #941a77 linear-gradient(to top, #941a77 0%, #c83b87 100%) 50% 50% no-repeat;
     background-size: cover;
-    .tariff-item__item:first-child {
-      color: #8267d5;
+    .tariff-item__item:first-child::before {
+      background-color: #8267d5;
     }
   }
   &_type_4 {
     background: #fa134f linear-gradient(to top, #fa134f 0%, #f64059 100%) 50% 50% no-repeat;
     background-size: cover;
-    .tariff-item__item:first-child {
-      color: #bb3383;
+    .tariff-item__item:first-child::before {
+      background-color: #bb3383;
     }
   }
   &:hover {
     transform: translateY(-20px);
     transition: transform 0.25s;
+    @media (max-width: $breakpoint-medium) {
+      transform: none;
+    }
   }
 }
 
 .tariff-item__title {
-  padding: 28px 20px 20px;
-  color: #ffffff;
+  padding: 20px;
+  color: #fff;
   font-size: 22px;
   font-weight: 700;
   background: linear-gradient(to bottom, transparent, rgba(255,255,255,.1));
 }
 
 .tariff-item__list {
-  margin: 20px 20px 0;
+  @include reset-list;
+  margin: 16px 23px 44px;
 }
 
 .tariff-item__item {
-  margin-bottom: 20px;
-  color: rgba(0,0,0,.3);
-}
-
-.tariff-item__item-text {
+  position: relative;
+  margin-bottom: 12px;
+  padding-left: 13px;
   color: #fff;
+  font-size: 14px;
+  line-height: 1.2;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 7px;
+    height: 7px;
+    background-color: rgba(0,0,0,.3);
+    border-radius: 50%;
+  }
 }
 
 .tariff-item__footer {
   margin: 0 10px;
-  padding: 20px 15px 15px;
+  padding: 14px 15px 13px;
   background-color: #fff;
   text-align: center;
 }
 
 .tariff-item__price {
-  margin-bottom: 17px;
+  margin-bottom: 8px;
   color: #000;
   font-size: 20px;
   font-weight: 700;
+}
+
+.tariff-item__button {
+  min-width: 166px;
 }

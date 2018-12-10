@@ -3,8 +3,7 @@
   @include reset-link;
   position: relative;
   display: inline-block;
-  width: 166px;
-  max-width: 100%;
+  // width: 166px;
   box-sizing: border-box;
   padding: 18px;
   font-size: 12px;
@@ -14,7 +13,7 @@
   text-align: center;
   overflow: hidden;
   cursor: pointer;
-  &_type_design {
+  &_type_order {
     color: #000;
     background-color: #34e0d2;
   }

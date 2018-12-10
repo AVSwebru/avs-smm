@@ -45,10 +45,13 @@
   @media (max-width: $breakpoint-large) {
     justify-content: space-evenly;
   }
+  @media (max-width: $breakpoint-small) {
+    flex-direction: column;
+  }
 }
 
 .main-nav__item {
-  margin: 0 18px;
+  margin: 15px 18px;
 }
 
 .main-nav__link {

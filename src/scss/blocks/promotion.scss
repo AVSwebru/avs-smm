@@ -1,5 +1,33 @@
+.promotion__title {
+  margin-bottom: 8px;
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.promotion__desc {
+  margin-bottom: 40px;
+  color: #343434;
+  font-size: 14px;
+  line-height: 1.4;
+  @media (max-width: $breakpoint-medium) {
+    margin-bottom: 35px;
+  }
+  @media (max-width: $breakpoint-small) {
+    margin-bottom: 20px;
+  }
+}
+
 .promotion__wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   margin-bottom: 165px;
+  @media (max-width: $breakpoint-medium) {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 74px;
+  }
+  @media (max-width: $breakpoint-small) {
+    grid-template-columns: 280px;
+      margin-bottom: 46px;
+  }
 }
