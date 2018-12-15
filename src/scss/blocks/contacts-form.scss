@@ -5,6 +5,7 @@
 
 .contacts-form__icon {
   width: 54px;
+  min-width: 54px;
   height: 44px;
   display: flex;
   align-items: center;
@@ -15,6 +16,7 @@
 }
 
 .contacts-form__input {
+  width: calc(100% - 54px);
   height: 46px;
   border: 1px solid #2f2f2f;
   &:focus {

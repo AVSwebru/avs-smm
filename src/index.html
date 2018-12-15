@@ -40,7 +40,7 @@
             </li>
           </ul>
         </nav>
-        <button class="main-header__feedback-btn feedback-btn">
+        <button class="main-header__feedback-btn feedback-btn" data-uk-toggle="target: #callback">
           <span class="feedback-btn__text">
             Перезвоните мне
           </span>
@@ -86,482 +86,489 @@
       </div>
     </div>
   </header>
-  <div class="intro">
-    <div class="uk-container">
-      <h1 class="intro__title">
-        Комплексный интернет-маркетинг в ваших социальных сетях
-      </h1>
-      <ul class="intro__social-list">
-        <li class="intro__social-item">
-          <svg width="16" height="9" viewBox="0 0 16 9">
-            <path d="M409.828 634.87h.956s.29-.032.436-.187c.137-.142.131-.41.131-.41s-.019-1.251.577-1.436c.588-.182 1.341 1.21 2.14 1.746.605.405 1.064.316 1.064.316l2.137-.03s1.118-.067.588-.924c-.043-.07-.31-.635-1.59-1.794-1.34-1.214-1.16-1.016.455-3.116.983-1.278 1.376-2.058 1.253-2.392-.117-.318-.84-.234-.84-.234l-2.404.013s-.178-.023-.311.054c-.13.076-.212.252-.212.252s-.381.99-.89 1.83c-1.07 1.775-1.5 1.869-1.674 1.759-.408-.257-.306-1.033-.306-1.583 0-1.72.268-2.438-.52-2.623-.263-.062-.455-.102-1.124-.11-.858-.008-1.585.004-1.996.2-.274.13-.485.422-.356.439.16.02.52.095.71.348.247.327.238 1.063.238 1.063s.142 2.025-.33 2.276c-.326.173-.77-.18-1.726-1.79-.489-.825-.859-1.737-.859-1.737s-.07-.17-.198-.26c-.154-.111-.37-.146-.37-.146l-2.286.014s-.343.01-.469.155c-.112.13-.009.397-.009.397s1.79 4.086 3.816 6.145c1.86 1.889 3.97 1.765 3.97 1.765z" fill="#fff" transform="translate(-402 -626)"/>
-          </svg>
-        </li>
-        <li class="intro__social-item">
-          <svg width="17" height="17" viewBox="0 0 17 17">
-            <path id="a" d="M469 626.312v6.375a5.313 5.313 0 0 1-5.313 5.313h-6.375a5.313 5.313 0 0 1-5.312-5.313v-6.375a5.313 5.313 0 0 1 5.312-5.312h6.375a5.313 5.313 0 0 1 5.313 5.312zm-1.594 0a3.723 3.723 0 0 0-3.719-3.719h-6.375a3.723 3.723 0 0 0-3.719 3.72v6.374a3.723 3.723 0 0 0 3.72 3.719h6.374a3.723 3.723 0 0 0 3.719-3.719zm-2.656 3.188a4.25 4.25 0 1 1-8.5 0 4.25 4.25 0 0 1 8.5 0zm-1.594 0a2.66 2.66 0 0 0-2.656-2.657 2.66 2.66 0 0 0-2.657 2.657 2.66 2.66 0 0 0 2.657 2.656 2.66 2.66 0 0 0 2.656-2.656zm1.913-5.135a.566.566 0 1 1 0 1.132.566.566 0 0 1 0-1.132z" fill="#fff" transform="translate(-452 -621)"/>
-          </svg>
-        </li>
-        <li class="intro__social-item">
-          <svg width="7" height="15" viewBox="0 0 7 15">
-            <path d="M508.223 629.989h1.519v6.769c0 .134.1.242.223.242h2.576c.123 0 .223-.108.223-.242v-6.737h1.746c.114 0 .21-.093.222-.215l.266-2.492a.256.256 0 0 0-.056-.189.217.217 0 0 0-.166-.08h-2.012v-1.563c0-.47.234-.71.696-.71h1.316c.123 0 .223-.107.223-.241v-2.287c0-.134-.1-.242-.223-.242h-1.813a1.26 1.26 0 0 0-.083-.002c-.314 0-1.407.066-2.27.926a2.714 2.714 0 0 0-.793 2.292v1.827h-1.594c-.124 0-.224.108-.224.242v2.46c0 .134.1.242.224.242z" fill="#fff" transform="translate(-508 -622)"/>
-          </svg>
-        </li>
-        <li class="intro__social-item">
-          <svg width="12" height="19" viewBox="0 0 12 19">
-            <path d="M557.87 631.976c-.148-.11-.301-.217-.436-.34-.523-.479-.577-1.026-.163-1.59.355-.483.95-.612 1.568-.335.12.054.234.121.343.193 2.23 1.455 5.29 1.496 7.53.065a2.08 2.08 0 0 1 .732-.36c.535-.13 1.032.056 1.319.5.328.507.322 1.002-.08 1.396-.62.603-1.364 1.04-2.19 1.346-.782.287-1.638.432-2.486.529.129.132.188.197.269.273 1.15 1.1 2.307 2.194 3.453 3.296.39.376.472.842.258 1.28-.236.476-.763.79-1.279.757-.327-.021-.582-.176-.81-.394-.868-.83-1.752-1.646-2.604-2.492-.247-.246-.366-.2-.584.014-.874.855-1.762 1.697-2.655 2.534-.401.376-.878.444-1.343.229-.495-.227-.81-.707-.785-1.19.016-.326.185-.575.42-.799 1.14-1.08 2.275-2.164 3.411-3.247.076-.072.145-.148.255-.26-1.549-.153-2.946-.516-4.143-1.405zm.073-7.178c.015-2.662 2.283-4.806 5.074-4.798 2.798.007 5.042 2.182 5.029 4.87-.014 2.626-2.297 4.755-5.089 4.746-2.763-.008-5.03-2.187-5.014-4.818zm5.055-2.342c-1.384-.002-2.488 1.057-2.477 2.376.01 1.301 1.114 2.335 2.49 2.33 1.371-.005 2.462-1.052 2.459-2.358-.006-1.306-1.1-2.347-2.472-2.348z" fill="#fff" transform="translate(-557 -620)"/>
-          </svg>
-        </li>
-      </ul>
-    </div>
-    <img class="intro__line-1" src="img/intro-line-1.png" alt="">
-    <img class="intro__line-2" src="img/intro-line-2.png" alt="">
-    <img class="intro__figure-1" src="img/intro-figure-1.png" alt="">
-    <img class="intro__figure-2" src="img/intro-figure-2.png" alt="">
-    <img class="intro__figure-3" src="img/intro-figure-3.png" alt="">
-    <img class="intro__semicircle-1" src="img/intro-semicircle-1.png" alt="">
-    <img class="intro__semicircle-2" src="img/intro-semicircle-2.png" alt="">
-    <svg class="intro__stick-1">
-      <use xlink:href="/img/sprite.svg#stick"/>
-    </svg>
-    <svg class="intro__stick-2">
-      <use xlink:href="/img/sprite.svg#stick"/>
-    </svg>
-    <svg class="intro__stick-3">
-      <use xlink:href="/img/sprite.svg#stick"/>
-    </svg>
-    <svg class="intro__stick-4">
-      <use xlink:href="/img/sprite.svg#stick"/>
-    </svg>
-    <svg class="intro__circle-1">
-      <use xlink:href="/img/sprite.svg#circle"/>
-    </svg>
-    <svg class="intro__circle-2">
-      <use xlink:href="/img/sprite.svg#circle"/>
-    </svg>
-    <svg class="intro__circle-3">
-      <use xlink:href="/img/sprite.svg#circle"/>
-    </svg>
-    <svg class="intro__ring-1">
-      <use xlink:href="/img/sprite.svg#ring"/>
-    </svg>
-    <svg class="intro__ring-2">
-      <use xlink:href="/img/sprite.svg#ring"/>
-    </svg>
-    <svg class="intro__ring-3">
-      <use xlink:href="/img/sprite.svg#ring"/>
-    </svg>
-    <svg class="intro__ring-4">
-      <use xlink:href="/img/sprite.svg#ring"/>
-    </svg>
-    <svg class="intro__ring-5">
-      <use xlink:href="/img/sprite.svg#ring"/>
-    </svg>
-    <div class="intro__rectangle-1-wrapper">
-      <svg class="intro__rectangle-1">
-        <use xlink:href="/img/sprite.svg#rectangle"/>
-      </svg>
-    </div>
-    <div class="intro__rectangle-2-wrapper">
-      <svg class="intro__rectangle-2">
-        <use xlink:href="/img/sprite.svg#rectangle"/>
-      </svg>
-    </div>
-    <div class="intro__rectangle-3-wrapper">
-      <svg class="intro__rectangle-3">
-        <use xlink:href="/img/sprite.svg#rectangle"/>
-      </svg>
-    </div>
-  </div>
-  <section class="home__services">
-    <div class="uk-container">
-      <h2 class="home__section-title">Что мы можем вам предложить?</h2>
-      <section class="design">
-        <h3 class="design__title">Дизайн</h3>
-        <div class="design__wrapper">
-          <div>
-            <section class="design-item design-item_type-1">
-              <div class="design-item__image-wrapper uk-cover-container">
-                <img data-uk-cover src="img/design-cover.jpg" alt="дизайн обложки">
-              </div>
-              <div class="design-item__content">
-                <div class="design-item__content-text">
-                  <h4 class="design-item__title">Дизайн обложки</h4>
-                  <div class="design-item__desc">
-                    3 варианта графического оформления обложки на ваш выбор
-                  </div>
-                  <div class="design-item__price">от 2 000 ₽</div>
-                </div>
-                <button class="design-item__button button button_type_order">
-                  <span class="button__text">Заказать</span>
-                  <span class="button__background"></span>
-                </button>
-              </div>
-              <button class="design-item__examples-btn" data-uk-toggle="target: #work">
-                Примеры работ
-              </button>
-            </section>
-          </div>
-          <div>
-            <section class="design-item design-item_type-2">
-              <div class="design-item__image-wrapper uk-cover-container">
-                <img data-uk-cover src="img/design-post.jpg" alt="оформление постов">
-              </div>
-              <div class="design-item__content">
-                <div class="design-item__content-text">
-                  <h4 class="design-item__title">Оформление постов</h4>
-                  <div class="design-item__desc">
-                    Изготовление шаблонов в едином стиле в фирменных цветах компании
-                  </div>
-                  <div class="design-item__bonus">
-                    +<br>
-                    Инструкция <span class="design-item__bonus-text-gift">в подарок</span>
-                  </div>
-                  <div class="design-item__price">от 3 000 ₽</div>
-                </div>
-                <button class="design-item__button button button_type_order">
-                  <span class="button__text">Заказать</span>
-                  <span class="button__background"></span>
-                </button>
-              </div>
-              <button class="design-item__examples-btn" data-uk-toggle="target: #work">
-                Примеры работ
-              </button>
-            </section>
-          </div>
-          <div>
-            <section class="design-item design-item_type-3">
-              <div class="design-item__image-wrapper uk-cover-container">
-                <img data-uk-cover src="img/design-group.jpg" alt="оформление группы">
-              </div>
-              <div class="design-item__content">
-                <div class="design-item__content-text">
-                  <h4 class="design-item__title">Оформление группы</h4>
-                  <div class="design-item__desc">
-                    Шапка профиля, оформление постов и товаров в единов стиле
-                  </div>
-                  <div class="design-item__price">от  5 000 ₽</div>
-                </div>
-                <button class="design-item__button button button_type_order">
-                  <span class="button__text">Заказать</span>
-                  <span class="button__background"></span>
-                </button>
-              </div>
-              <button class="design-item__examples-btn" data-uk-toggle="target: #work">
-                Примеры работ
-              </button>
-            </section>
-          </div>
-        </div>
-      </section>
-      <secton class="promotion">
-        <h3 class="promotion__title">Комплексное продвижение</h3>
-        <div class="promotion__desc">
-          Вы можете выбрать удобный тариф, подходящий под ваши потребности и запросы. <br>
-          Стоимость их формируется в зависимости от колличества услуг, включенных в обслуживание за месяц.
-        </div>
-        <div class="promotion__wrapper">
-          <div>
-            <section class="tariff-item tariff-item_type_1">
-              <div>
-                <h4 class="tariff-item__title">Тариф Эконом</h4>
-                <ul class="tariff-item__list">
-                  <li class="tariff-item__item">
-                    Анализ бизнеса, целевой аудитории, конкурентов
-                  </li>
-                  <li class="tariff-item__item">
-                    Разработка стратегии
-                  </li>
-                  <li class="tariff-item__item">
-                    Создание аккаунтов
-                  в социальных сети
-                </li>
-                  <li class="tariff-item__item">
-                    Ведение групп, наполнение
-                  их качественным контентом
-                </li>
-                  <li class="tariff-item__item">
-                    Разработка специальных акций и конкурсных механик
-                  </li>
-                  <li class="tariff-item__item">
-                    Обратная связь с подписчиками</li>
-                  <li class="tariff-item__item">
-                    Регулярный анализ и статистика аккаунтов
-                  </li>
-                  <li class="tariff-item__item">
-                    Анализ полученного результата. При необходимости его корректировка.
-                  </li>
-                </ul>
-              </div>
-              <footer class="tariff-item__footer">
-                <div class="tariff-item__price">
-                  15 000 ₽
-                </div>
-                <button class="tariff-item__button button button_type_tariff">
-                  <span class="button__text">Заказать</span>
-                  <span class="button__background"></span>
-                </button>
-              </footer>
-            </section>
-          </div>
-          <div>
-            <section class="tariff-item tariff-item_type_2">
-              <div>
-                <h4 class="tariff-item__title">Тариф Стандарт</h4>
-                <ul class="tariff-item__list">
-                  <li class="tariff-item__item">
-                    Тариф Эконом<br> +
-                  </li>
-                  <li class="tariff-item__item">
-                    Графическое оформление социальных сетей
-                  </li>
-                  <li class="tariff-item__item">
-                    Ежемесячная разработка контент-плана
-                  </li>
-                </ul>
-              </div>
-              <footer class="tariff-item__footer">
-                <div class="tariff-item__price">
-                  20 000 ₽
-                </div>
-                <button class="tariff-item__button button button_type_tariff">
-                  <span class="button__text">Заказать</span>
-                  <span class="button__background"></span>
-                </button>
-              </footer>
-            </section>
-          </div>
-          <div>
-            <section class="tariff-item tariff-item_type_3">
-              <div>
-                <h4 class="tariff-item__title">Тариф Бизнес</h4>
-                <ul class="tariff-item__list">
-                  <li class="tariff-item__item">
-                      Тариф Стандарт<br> +
-                    </span>
-                  </li>
-                  <li class="tariff-item__item">
-                      Разработка стратегии
-                  </li>
-                  <li class="tariff-item__item">
-                    Профессиональные и качественные фотографии, съёмка и монтаж видеороликов, графическое оформление публикаций
-                  </li>
-                  <li class="tariff-item__item">
-                    Круглосуточная обратная связь с подписчиками, мониторинг
-                  </li>
-                  <li class="tariff-item__item">
-                    Регулярный анализ и статистика аккаунтов, предоставление полного отчёта о выполненной работе
-                  </li>
-                  <li class="tariff-item__item">
-                    Разработка дальнейшего контент-плана на основе полученного анализа результата
-                  </li>
-                </ul>
-              </div>
-              <footer class="tariff-item__footer">
-                <div class="tariff-item__price">
-                  25 000 ₽
-                </div>
-                <button class="tariff-item__button button button_type_tariff">
-                  <span class="button__text">Заказать</span>
-                  <span class="button__background"></span>
-                </button>
-              </footer>
-            </section>
-          </div>
-          <div>
-            <section class="tariff-item tariff-item_type_4">
-              <div>
-                <h4 class="tariff-item__title">Тариф VIP</h4>
-                <ul class="tariff-item__list">
-                  <li class="tariff-item__item">
-                    Тариф Бизнес<br>
-                      +
-                  </li>
-                  <li class="tariff-item__item">
-                    Подбор площадок с высокой концентрацией ЦА
-                  </li>
-                  <li class="tariff-item__item">
-                    Разработка маркетинговой стратегии
-                  </li>
-                  <li class="tariff-item__item">
-                    Ежемесячная разработка календарного плана
-                  </li>
-                  <li class="tariff-item__item">
-                    Работа с историями в instagram
-                  </li>
-                  <li class="tariff-item__item">
-                    Запуск мероприятий в каждой из соц.сети без кросспостинга+ круговое продвижение
-                  </li>
-                  <li class="tariff-item__item">
-                    Замер по основным метрикам
-                  </li>
-                  <li class="tariff-item__item">
-                    Круглосуточная обратная связь с подписчиками, мониторинг
-                  </li>
-                  <li class="tariff-item__item">
-                    Настройка таргетированной рекламы в социальных сетях
-                  </li>
-                </ul>
-              </div>
-              <footer class="tariff-item__footer">
-                <div class="tariff-item__price">
-                  30 000 ₽
-                </div>
-                <button class="tariff-item__button button button_type_tariff">
-                  <span class="button__text">Заказать</span>
-                  <span class="button__background"></span>
-                </button>
-              </footer>
-            </section>
-          </div>
-        </div>
-      </secton>
-    </div>
-  </section>
-  <div class="action">
-    <div class="uk-container">
-      <div class="action__wrapper">
-        <div class="action__banner">
-          Акция
-        </div>
-        <div class="action__title">
-          При заказе «VIP-пакета» рекламный ролик В ПОДАРОК!
-        </div>
-        <a class="action__more" href="#">
-          Подробнее <span data-uk-icon="icon: arrow-right"></span>
-        </a>
-      </div>
-    </div>
-  </div>
-  <section class="contacts">
-    <div class="uk-container">
-      <h2 class="home__section-title">Как начать с нами работать</h2>
-      <div class="contacts__wrapper">
-        <div class="contacts__leftside">
-          <div class="contacts__text">Оставьте свои контакты для связи</div>
-          <form class="contacts-form" aria-label="Форма обратной связи">
-            <div class="contacts-form__row">
-              <label class="contacts-form__icon" for="contacts-name" aria-label="Имя">
-                <svg width="16" height="22">
-                  <use xlink:href="/img/sprite.svg#person">
-                </svg>
-              </label>
-              <input class="contacts-form__input uk-input" id="contacts-name" type="text" placeholder="Имя" required>
-            </div>
-            <div class="contacts-form__row">
-              <label class="contacts-form__icon" for="contacts-tel" aria-label="Телефон">
-                <svg width="17" height="17">
-                  <use xlink:href="/img/sprite.svg#tel">
-                </svg>
-              </label>
-              <input class="contacts-form__input uk-input" id="contacts-tel" type="tel" placeholder="Телефон" required>
-            </div>
-            <button class="tariff-item__button button button_type_contacts" type="submit">
-              <span class="button__text">отправить</span>
-              <span class="button__background"></span>
-            </button>
-          </form>
-        </div>
-        <div class="contacts__rightside">
-          <div class="contacts__item">
-            <div class="contacts__text">Позвоните нам</div>
-            <a class="contacts__info" href="tel: +79202338464">
-              +7 (920) 233 84 64
-            </a>
-          </div>
-          <div class="contacts__item">
-            <div class="contacts__text">Или напишите</div>
-            <a class="contacts__info" href="mailto: avsweb@mail.ru">
-              avsweb@mail.ru
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="blog">
-    <div class="uk-container">
-      <div class="blog__wrapper">
-        <div>
-          <h2 class="home__section-title">Блог</h2>
-          <div class="blog__text">
-            <p>Согласны ли Вы, что даже самый маленький бизнес нуждается в правильном интернет-маркетинге? Если да, то оставайтесь с нами и следите за новостями. Ведь не зря говорили «Ученье-свет, а …». Научиться можно всему, главное желание! А наша задача - помочь Вам в достижении заветной цели)</p>
-            <p>Мы постараемся помочь Вам разобраться с лёгкостью в пучине интернет-маркетинга. По пути нашего обучения
-            Вас будут сопровождать краткость, доходчивость, а также отзывчивость профессионалов.</p>
-          </div>
-          <a class="blog__learnmore" href="#">
-            <svg class="blog__learnmore-icon" width="22" height="18" fill="#672aa0">
-              <use xlink:href="/img/sprite.svg#pointer">
+  <main>
+    <div class="intro">
+      <div class="uk-container">
+        <h1 class="intro__title">
+          Комплексный интернет-маркетинг в ваших социальных сетях
+        </h1>
+        <ul class="intro__social-list">
+          <li class="intro__social-item">
+            <svg width="16" height="9" viewBox="0 0 16 9">
+              <path d="M409.828 634.87h.956s.29-.032.436-.187c.137-.142.131-.41.131-.41s-.019-1.251.577-1.436c.588-.182 1.341 1.21 2.14 1.746.605.405 1.064.316 1.064.316l2.137-.03s1.118-.067.588-.924c-.043-.07-.31-.635-1.59-1.794-1.34-1.214-1.16-1.016.455-3.116.983-1.278 1.376-2.058 1.253-2.392-.117-.318-.84-.234-.84-.234l-2.404.013s-.178-.023-.311.054c-.13.076-.212.252-.212.252s-.381.99-.89 1.83c-1.07 1.775-1.5 1.869-1.674 1.759-.408-.257-.306-1.033-.306-1.583 0-1.72.268-2.438-.52-2.623-.263-.062-.455-.102-1.124-.11-.858-.008-1.585.004-1.996.2-.274.13-.485.422-.356.439.16.02.52.095.71.348.247.327.238 1.063.238 1.063s.142 2.025-.33 2.276c-.326.173-.77-.18-1.726-1.79-.489-.825-.859-1.737-.859-1.737s-.07-.17-.198-.26c-.154-.111-.37-.146-.37-.146l-2.286.014s-.343.01-.469.155c-.112.13-.009.397-.009.397s1.79 4.086 3.816 6.145c1.86 1.889 3.97 1.765 3.97 1.765z" fill="#fff" transform="translate(-402 -626)"/>
             </svg>
-            <span class="blog__learnmore-text">обрести знания</span>
+          </li>
+          <li class="intro__social-item">
+            <svg width="17" height="17" viewBox="0 0 17 17">
+              <path id="a" d="M469 626.312v6.375a5.313 5.313 0 0 1-5.313 5.313h-6.375a5.313 5.313 0 0 1-5.312-5.313v-6.375a5.313 5.313 0 0 1 5.312-5.312h6.375a5.313 5.313 0 0 1 5.313 5.312zm-1.594 0a3.723 3.723 0 0 0-3.719-3.719h-6.375a3.723 3.723 0 0 0-3.719 3.72v6.374a3.723 3.723 0 0 0 3.72 3.719h6.374a3.723 3.723 0 0 0 3.719-3.719zm-2.656 3.188a4.25 4.25 0 1 1-8.5 0 4.25 4.25 0 0 1 8.5 0zm-1.594 0a2.66 2.66 0 0 0-2.656-2.657 2.66 2.66 0 0 0-2.657 2.657 2.66 2.66 0 0 0 2.657 2.656 2.66 2.66 0 0 0 2.656-2.656zm1.913-5.135a.566.566 0 1 1 0 1.132.566.566 0 0 1 0-1.132z" fill="#fff" transform="translate(-452 -621)"/>
+            </svg>
+          </li>
+          <li class="intro__social-item">
+            <svg width="7" height="15" viewBox="0 0 7 15">
+              <path d="M508.223 629.989h1.519v6.769c0 .134.1.242.223.242h2.576c.123 0 .223-.108.223-.242v-6.737h1.746c.114 0 .21-.093.222-.215l.266-2.492a.256.256 0 0 0-.056-.189.217.217 0 0 0-.166-.08h-2.012v-1.563c0-.47.234-.71.696-.71h1.316c.123 0 .223-.107.223-.241v-2.287c0-.134-.1-.242-.223-.242h-1.813a1.26 1.26 0 0 0-.083-.002c-.314 0-1.407.066-2.27.926a2.714 2.714 0 0 0-.793 2.292v1.827h-1.594c-.124 0-.224.108-.224.242v2.46c0 .134.1.242.224.242z" fill="#fff" transform="translate(-508 -622)"/>
+            </svg>
+          </li>
+          <li class="intro__social-item">
+            <svg width="12" height="19" viewBox="0 0 12 19">
+              <path d="M557.87 631.976c-.148-.11-.301-.217-.436-.34-.523-.479-.577-1.026-.163-1.59.355-.483.95-.612 1.568-.335.12.054.234.121.343.193 2.23 1.455 5.29 1.496 7.53.065a2.08 2.08 0 0 1 .732-.36c.535-.13 1.032.056 1.319.5.328.507.322 1.002-.08 1.396-.62.603-1.364 1.04-2.19 1.346-.782.287-1.638.432-2.486.529.129.132.188.197.269.273 1.15 1.1 2.307 2.194 3.453 3.296.39.376.472.842.258 1.28-.236.476-.763.79-1.279.757-.327-.021-.582-.176-.81-.394-.868-.83-1.752-1.646-2.604-2.492-.247-.246-.366-.2-.584.014-.874.855-1.762 1.697-2.655 2.534-.401.376-.878.444-1.343.229-.495-.227-.81-.707-.785-1.19.016-.326.185-.575.42-.799 1.14-1.08 2.275-2.164 3.411-3.247.076-.072.145-.148.255-.26-1.549-.153-2.946-.516-4.143-1.405zm.073-7.178c.015-2.662 2.283-4.806 5.074-4.798 2.798.007 5.042 2.182 5.029 4.87-.014 2.626-2.297 4.755-5.089 4.746-2.763-.008-5.03-2.187-5.014-4.818zm5.055-2.342c-1.384-.002-2.488 1.057-2.477 2.376.01 1.301 1.114 2.335 2.49 2.33 1.371-.005 2.462-1.052 2.459-2.358-.006-1.306-1.1-2.347-2.472-2.348z" fill="#fff" transform="translate(-557 -620)"/>
+            </svg>
+          </li>
+        </ul>
+      </div>
+      <img class="intro__line-1" src="img/intro-line-1.png" alt="">
+      <img class="intro__line-2" src="img/intro-line-2.png" alt="">
+      <img class="intro__figure-1" src="img/intro-figure-1.png" alt="">
+      <img class="intro__figure-2" src="img/intro-figure-2.png" alt="">
+      <img class="intro__figure-3" src="img/intro-figure-3.png" alt="">
+      <img class="intro__semicircle-1" src="img/intro-semicircle-1.png" alt="">
+      <img class="intro__semicircle-2" src="img/intro-semicircle-2.png" alt="">
+      <svg class="intro__stick-1">
+        <use xlink:href="/img/sprite.svg#stick"/>
+      </svg>
+      <svg class="intro__stick-2">
+        <use xlink:href="/img/sprite.svg#stick"/>
+      </svg>
+      <svg class="intro__stick-3">
+        <use xlink:href="/img/sprite.svg#stick"/>
+      </svg>
+      <svg class="intro__stick-4">
+        <use xlink:href="/img/sprite.svg#stick"/>
+      </svg>
+      <svg class="intro__circle-1">
+        <use xlink:href="/img/sprite.svg#circle"/>
+      </svg>
+      <svg class="intro__circle-2">
+        <use xlink:href="/img/sprite.svg#circle"/>
+      </svg>
+      <svg class="intro__circle-3">
+        <use xlink:href="/img/sprite.svg#circle"/>
+      </svg>
+      <svg class="intro__ring-1">
+        <use xlink:href="/img/sprite.svg#ring"/>
+      </svg>
+      <svg class="intro__ring-2">
+        <use xlink:href="/img/sprite.svg#ring"/>
+      </svg>
+      <svg class="intro__ring-3">
+        <use xlink:href="/img/sprite.svg#ring"/>
+      </svg>
+      <svg class="intro__ring-4">
+        <use xlink:href="/img/sprite.svg#ring"/>
+      </svg>
+      <svg class="intro__ring-5">
+        <use xlink:href="/img/sprite.svg#ring"/>
+      </svg>
+      <div class="intro__rectangle-1-wrapper">
+        <svg class="intro__rectangle-1">
+          <use xlink:href="/img/sprite.svg#rectangle"/>
+        </svg>
+      </div>
+      <div class="intro__rectangle-2-wrapper">
+        <svg class="intro__rectangle-2">
+          <use xlink:href="/img/sprite.svg#rectangle"/>
+        </svg>
+      </div>
+      <div class="intro__rectangle-3-wrapper">
+        <svg class="intro__rectangle-3">
+          <use xlink:href="/img/sprite.svg#rectangle"/>
+        </svg>
+      </div>
+    </div>
+    <section class="home__services">
+      <div class="uk-container">
+        <h2 class="home__section-title">Что мы можем вам предложить?</h2>
+        <section class="design" id="free">
+          <h3 class="design__title">Дизайн</h3>
+          <div class="design__wrapper">
+            <div>
+              <article class="design-item design-item_type-1">
+                <div class="design-item__image-wrapper uk-cover-container">
+                  <img data-uk-cover src="img/design-cover.jpg" alt="дизайн обложки">
+                </div>
+                <div class="design-item__content">
+                  <div class="design-item__content-text">
+                    <h4 class="design-item__title">Дизайн обложки</h4>
+                    <div class="design-item__desc">
+                      3 варианта графического оформления обложки на ваш выбор
+                    </div>
+                    <div class="design-item__price">от 2 000 ₽</div>
+                  </div>
+                  <button class="design-item__button button button_type_order" data-uk-toggle="target: #callback">
+                    <span class="button__text">Заказать</span>
+                    <span class="button__background"></span>
+                  </button>
+                </div>
+                <button class="design-item__examples-btn" data-uk-toggle="target: #work">
+                  Примеры работ
+                </button>
+              </article>
+            </div>
+            <div>
+              <article class="design-item design-item_type-2">
+                <div class="design-item__image-wrapper uk-cover-container">
+                  <img data-uk-cover src="img/design-post.jpg" alt="оформление постов">
+                </div>
+                <div class="design-item__content">
+                  <div class="design-item__content-text">
+                    <h4 class="design-item__title">Оформление постов</h4>
+                    <div class="design-item__desc">
+                      Изготовление шаблонов в едином стиле в фирменных цветах компании
+                    </div>
+                    <div class="design-item__bonus">
+                      +<br>
+                      Инструкция <span class="design-item__bonus-text-gift">в подарок</span>
+                    </div>
+                    <div class="design-item__price">от 3 000 ₽</div>
+                  </div>
+                  <button class="design-item__button button button_type_order"  data-uk-toggle="target: #callback">
+                    <span class="button__text">Заказать</span>
+                    <span class="button__background"></span>
+                  </button>
+                </div>
+                <button class="design-item__examples-btn" data-uk-toggle="target: #work">
+                  Примеры работ
+                </button>
+              </article>
+            </div>
+            <div>
+              <article class="design-item design-item_type-3">
+                <div class="design-item__image-wrapper uk-cover-container">
+                  <img data-uk-cover src="img/design-group.jpg" alt="оформление группы">
+                </div>
+                <div class="design-item__content">
+                  <div class="design-item__content-text">
+                    <h4 class="design-item__title">Оформление группы</h4>
+                    <div class="design-item__desc">
+                      Шапка профиля, оформление постов и товаров в единов стиле
+                    </div>
+                    <div class="design-item__price">от  5 000 ₽</div>
+                  </div>
+                  <button class="design-item__button button button_type_order"  data-uk-toggle="target: #callback">
+                    <span class="button__text">Заказать</span>
+                    <span class="button__background"></span>
+                  </button>
+                </div>
+                <button class="design-item__examples-btn" data-uk-toggle="target: #work">
+                  Примеры работ
+                </button>
+              </article>
+            </div>
+          </div>
+        </section>
+        <secton class="promotion">
+          <h3 class="promotion__title">Комплексное продвижение</h3>
+          <div class="promotion__desc">
+            Вы можете выбрать удобный тариф, подходящий под ваши потребности и запросы. <br>
+            Стоимость их формируется в зависимости от колличества услуг, включенных в обслуживание за месяц.
+          </div>
+          <div class="promotion__wrapper">
+            <div>
+              <article class="tariff-item tariff-item_type_1">
+                <div>
+                  <h4 class="tariff-item__title">Тариф Эконом</h4>
+                  <ul class="tariff-item__list">
+                    <li class="tariff-item__item">
+                      Анализ бизнеса, целевой аудитории, конкурентов
+                    </li>
+                    <li class="tariff-item__item">
+                      Разработка стратегии
+                    </li>
+                    <li class="tariff-item__item">
+                      Создание аккаунтов
+                    в социальных сети
+                  </li>
+                    <li class="tariff-item__item">
+                      Ведение групп, наполнение
+                    их качественным контентом
+                  </li>
+                    <li class="tariff-item__item">
+                      Разработка специальных акций и конкурсных механик
+                    </li>
+                    <li class="tariff-item__item">
+                      Обратная связь с подписчиками</li>
+                    <li class="tariff-item__item">
+                      Регулярный анализ и статистика аккаунтов
+                    </li>
+                    <li class="tariff-item__item">
+                      Анализ полученного результата. При необходимости его корректировка.
+                    </li>
+                  </ul>
+                </div>
+                <footer class="tariff-item__footer">
+                  <div class="tariff-item__price">
+                    15 000 ₽
+                  </div>
+                  <button class="tariff-item__button button button_type_tariff" data-uk-toggle="target: #callback">
+                    <span class="button__text">Заказать</span>
+                    <span class="button__background"></span>
+                  </button>
+                </footer>
+              </article>
+            </div>
+            <div>
+              <article class="tariff-item tariff-item_type_2">
+                <div>
+                  <h4 class="tariff-item__title">Тариф Стандарт</h4>
+                  <ul class="tariff-item__list">
+                    <li class="tariff-item__item">
+                      Тариф Эконом<br> +
+                    </li>
+                    <li class="tariff-item__item">
+                      Графическое оформление социальных сетей
+                    </li>
+                    <li class="tariff-item__item">
+                      Ежемесячная разработка контент-плана
+                    </li>
+                  </ul>
+                </div>
+                <footer class="tariff-item__footer">
+                  <div class="tariff-item__price">
+                    20 000 ₽
+                  </div>
+                  <button class="tariff-item__button button button_type_tariff" data-uk-toggle="target: #callback">
+                    <span class="button__text">Заказать</span>
+                    <span class="button__background"></span>
+                  </button>
+                </footer>
+              </article>
+            </div>
+            <div>
+              <article class="tariff-item tariff-item_type_3">
+                <div>
+                  <h4 class="tariff-item__title">Тариф Бизнес</h4>
+                  <ul class="tariff-item__list">
+                    <li class="tariff-item__item">
+                        Тариф Стандарт<br> +
+                      </span>
+                    </li>
+                    <li class="tariff-item__item">
+                        Разработка стратегии
+                    </li>
+                    <li class="tariff-item__item">
+                      Профессиональные и качественные фотографии, съёмка и монтаж видеороликов, графическое оформление публикаций
+                    </li>
+                    <li class="tariff-item__item">
+                      Круглосуточная обратная связь с подписчиками, мониторинг
+                    </li>
+                    <li class="tariff-item__item">
+                      Регулярный анализ и статистика аккаунтов, предоставление полного отчёта о выполненной работе
+                    </li>
+                    <li class="tariff-item__item">
+                      Разработка дальнейшего контент-плана на основе полученного анализа результата
+                    </li>
+                  </ul>
+                </div>
+                <footer class="tariff-item__footer">
+                  <div class="tariff-item__price">
+                    25 000 ₽
+                  </div>
+                  <button class="tariff-item__button button button_type_tariff" data-uk-toggle="target: #callback">
+                    <span class="button__text">Заказать</span>
+                    <span class="button__background"></span>
+                  </button>
+                </footer>
+              </article>
+            </div>
+            <div>
+              <article class="tariff-item tariff-item_type_4">
+                <div>
+                  <h4 class="tariff-item__title">Тариф VIP</h4>
+                  <ul class="tariff-item__list">
+                    <li class="tariff-item__item">
+                      Тариф Бизнес<br>
+                        +
+                    </li>
+                    <li class="tariff-item__item">
+                      Подбор площадок с высокой концентрацией ЦА
+                    </li>
+                    <li class="tariff-item__item">
+                      Разработка маркетинговой стратегии
+                    </li>
+                    <li class="tariff-item__item">
+                      Ежемесячная разработка календарного плана
+                    </li>
+                    <li class="tariff-item__item">
+                      Работа с историями в instagram
+                    </li>
+                    <li class="tariff-item__item">
+                      Запуск мероприятий в каждой из соц.сети без кросспостинга+ круговое продвижение
+                    </li>
+                    <li class="tariff-item__item">
+                      Замер по основным метрикам
+                    </li>
+                    <li class="tariff-item__item">
+                      Круглосуточная обратная связь с подписчиками, мониторинг
+                    </li>
+                    <li class="tariff-item__item">
+                      Настройка таргетированной рекламы в социальных сетях
+                    </li>
+                  </ul>
+                </div>
+                <footer class="tariff-item__footer">
+                  <div class="tariff-item__price">
+                    30 000 ₽
+                  </div>
+                  <button class="tariff-item__button button button_type_tariff" data-uk-toggle="target: #callback">
+                    <span class="button__text">Заказать</span>
+                    <span class="button__background"></span>
+                  </button>
+                </footer>
+              </article>
+            </div>
+          </div>
+        </secton>
+      </div>
+    </section>
+    <div class="action">
+      <div class="uk-container">
+        <div class="action__wrapper">
+          <div class="action__banner">
+            Акция
+          </div>
+          <div class="action__title">
+            При заказе «VIP-пакета» рекламный ролик В ПОДАРОК!
+          </div>
+          <a class="action__more" href="#">
+            Подробнее <span data-uk-icon="icon: arrow-right"></span>
           </a>
-        </div>
-        <div>
-          <div class="blog__instructions">
-            <div>
-              <section class="blog-item">
-                <img class="blog-item__book" src="img/book.png" alt="">
-                <h3 class="blog-item__title">
-                  Инструкция по чему-нибудь
-                </h3>
-                <div class="blog-item__price">
-                  2 000 ₽
-                </div>
-                <button class="blog-item__button button button_type_blog" type="button">
-                  <span class="button__text">Купить</span>
-                  <span class="button__background"></span>
-                </button>
-              </section>
-            </div>
-            <div>
-              <section class="blog-item">
-                <img class="blog-item__book" src="img/book.png" alt="">
-                <h3 class="blog-item__title">
-                  Инструкция по чему-нибудь
-                </h3>
-                <div class="blog-item__price">
-                  2 000 ₽
-                </div>
-                <button class="blog-item__button button button_type_blog" type="button">
-                  <span class="button__text">Купить</span>
-                  <span class="button__background"></span>
-                </button>
-              </section>
-            </div>
-            <div>
-              <section class="blog-item">
-                <img class="blog-item__book" src="img/book.png" alt="">
-                <h3 class="blog-item__title">
-                  Инструкция по чему-нибудь
-                </h3>
-                <div class="blog-item__price">
-                  2 000 ₽
-                </div>
-                <button class="blog-item__button button button_type_blog" type="button">
-                  <span class="button__text">Купить</span>
-                  <span class="button__background"></span>
-                </button>
-              </section>
-            </div>
-          </div>
-          <div class="blog__free-wrapper">
-            <a class="blog__free" href="#">как получить бесплатно?</a>
-          </div>
         </div>
       </div>
     </div>
-  </section>
-  <footer class="main-footer">
-    <div class="uk-container">
-      <div class="main-footer__wrapper">
-        <div class="main-footer__additional-link-wrapper">
-          <a class="main-footer__additional-link" href="#">
-            Политика конфиденциальности
-          </a>
-          <a class="main-footer__additional-link" href="#">
-            Пользовательское соглашение
-          </a>
+    <section class="contacts">
+      <div class="uk-container">
+        <h2 class="home__section-title">Как начать с нами работать</h2>
+        <div class="contacts__wrapper">
+          <div class="contacts__leftside">
+            <div class="contacts__text">Оставьте свои контакты для связи</div>
+            <form class="contacts-form" aria-label="Форма обратной связи">
+              <div class="contacts-form__row">
+                <label class="contacts-form__icon" for="contacts-name" aria-label="Имя">
+                  <svg width="16" height="22">
+                    <use xlink:href="/img/sprite.svg#person">
+                  </svg>
+                </label>
+                <input class="contacts-form__input uk-input" id="contacts-name" type="text" placeholder="Имя" required>
+              </div>
+              <div class="contacts-form__row">
+                <label class="contacts-form__icon" for="contacts-tel" aria-label="Телефон">
+                  <svg width="17" height="17">
+                    <use xlink:href="/img/sprite.svg#tel">
+                  </svg>
+                </label>
+                <input class="contacts-form__input uk-input" id="contacts-tel" type="tel" placeholder="Телефон" required>
+              </div>
+              <button class="tariff-item__button button button_type_contacts" type="submit">
+                <span class="button__text">отправить</span>
+                <span class="button__background"></span>
+              </button>
+            </form>
+          </div>
+          <div class="contacts__rightside">
+            <div class="contacts__item">
+              <div class="contacts__text">Позвоните нам</div>
+              <a class="contacts__info" href="tel: +79202338464">
+                +7 (920) 233 84 64
+              </a>
+            </div>
+            <div class="contacts__item">
+              <div class="contacts__text">Или напишите</div>
+              <a class="contacts__info" href="mailto: avsweb@mail.ru">
+                avsweb@mail.ru
+              </a>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
+    <section class="blog">
+      <div class="uk-container">
+        <div class="blog__wrapper">
+          <div>
+            <h2 class="home__section-title">Блог</h2>
+            <div class="blog__text">
+              <p>Согласны ли Вы, что даже самый маленький бизнес нуждается в правильном интернет-маркетинге? Если да, то оставайтесь с нами и следите за новостями. Ведь не зря говорили «Ученье-свет, а …». Научиться можно всему, главное желание! А наша задача - помочь Вам в достижении заветной цели)</p>
+              <p>Мы постараемся помочь Вам разобраться с лёгкостью в пучине интернет-маркетинга. По пути нашего обучения
+              Вас будут сопровождать краткость, доходчивость, а также отзывчивость профессионалов.</p>
+            </div>
+            <a class="blog__learnmore" href="#">
+              <svg class="blog__learnmore-icon" width="22" height="18" fill="#672aa0">
+                <use xlink:href="/img/sprite.svg#pointer">
+              </svg>
+              <span class="blog__learnmore-text">обрести знания</span>
+            </a>
+          </div>
+          <div>
+            <div class="uk-position-relative js-blog-slideshow">
+              <div class="blog__instructions js-blog-slideshow-items">
+                <div>
+                  <article class="blog-item">
+                    <img class="blog-item__book" src="img/instruction.svg" alt="">
+                    <h3 class="blog-item__title">
+                      Инструкция по чему-нибудь
+                    </h3>
+                    <div class="blog-item__price">
+                      2 000 ₽
+                    </div>
+                    <button class="blog-item__button button button_type_blog" type="button" data-uk-toggle="target: #callback">
+                      <span class="button__text">Купить</span>
+                      <span class="button__background"></span>
+                    </button>
+                  </article>
+                </div>
+                <div>
+                  <article class="blog-item">
+                    <img class="blog-item__book" src="img/instruction.svg" alt="">
+                    <h3 class="blog-item__title">
+                      Инструкция по чему-нибудь
+                    </h3>
+                    <div class="blog-item__price">
+                      2 000 ₽
+                    </div>
+                    <button class="blog-item__button button button_type_blog" type="button" data-uk-toggle="target: #callback">
+                      <span class="button__text">Купить</span>
+                      <span class="button__background"></span>
+                    </button>
+                  </article>
+                </div>
+                <div>
+                  <article class="blog-item">
+                    <img class="blog-item__book" src="img/instruction.svg" alt="">
+                    <h3 class="blog-item__title">
+                      Инструкция по чему-нибудь
+                    </h3>
+                    <div class="blog-item__price">
+                      2 000 ₽
+                    </div>
+                    <button class="blog-item__button button button_type_blog" type="button" data-uk-toggle="target: #callback">
+                      <span class="button__text">Купить</span>
+                      <span class="button__background"></span>
+                    </button>
+                  </article>
+                </div>
+              </div>
+              <a class="blog__slider-arrow blog__slider-arrow--left" href="#"
+              data-uk-slideshow-item="previous"></a>
+              <a class="blog__slider-arrow blog__slider-arrow--right" href="#" data-uk-slideshow-item="next"></a>
+            </div>
+            <div class="blog__free-wrapper">
+              <a class="blog__free" href="#free" data-uk-scroll>как получить бесплатно?</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </main>
+    <footer class="main-footer">
+      <div class="uk-container">
+        <div class="main-footer__wrapper">
+          <div class="main-footer__additional-link-wrapper">
+            <a class="main-footer__additional-link" href="#">
+              Политика конфиденциальности
+            </a>
+            <a class="main-footer__additional-link" href="#">
+              Пользовательское соглашение
+            </a>
+          </div>
           <nav class="main-footer__main-nav main-nav" aria-label="Дополнительное меню">
             <ul class="main-nav__list">
               <li class="main-nav__item">
@@ -586,49 +593,101 @@
               </li>
             </ul>
           </nav>
-          <button class="main-footer__feedback-btn feedback-btn">
+          <button class="main-footer__feedback-btn feedback-btn" data-uk-toggle="target: #callback">
             <span class="feedback-btn__text">
               Перезвоните мне
             </span>
             <span class="feedback-btn__background"></span>
           </button>
-
+        </div>
+      </div>
+    </footer>
+    <div id="work" data-uk-modal>
+      <div class="work uk-modal-dialog uk-modal-body uk-position-relative">
+        <div class="work__title">
+          Оформление постов
+        </div>
+        <div class="work__slider uk-position-relative uk-visible-toggle" data-uk-slideshow="min-height: 770; animation: fade">
+          <ul class="work__items uk-slideshow-items">
+            <li>
+              <div class="work__img-wrapper uk-cover-container">
+                <img data-uk-cover src="img/work.jpg" alt="">
+              </div>
+              <div class="work__subtitle">
+                Разработка единого стиля профиля в инстаграм для бухгалтерской компании
+              </div>
+              <div class="work__desc">
+                8 фев 2017 в 19:37 Подготовили обложку, аватар  и разработали дизайн постов для сообщества. Игорь, спасибо за Ваш заказ!
+              </div>
+              <button class="button button_type_order" data-uk-toggle="target: #callback">
+                <span class="button__text">Заказать</span>
+                <span class="button__background"></span>
+              </button>
+            </li>
+            <li>
+              <div class="work__img-wrapper uk-cover-container">
+                <img data-uk-cover src="img/design-group.jpg" alt="">
+              </div>
+              <div class="work__subtitle">
+                Разработка единого стиля профиля в инстаграм для бухгалтерской компании
+              </div>
+              <div class="work__desc">
+                8 фев 2017 в 19:37 Подготовили обложку, аватар  и разработали дизайн постов для сообщества. Игорь, спасибо за Ваш заказ!
+              </div>
+              <button class="button button_type_order" data-uk-toggle="target: #callback">
+                <span class="button__text">Заказать</span>
+                <span class="button__background"></span>
+              </button>
+            </li>
+            <li>
+              <div class="work__img-wrapper uk-cover-container">
+                <img data-uk-cover src="img/design-post.jpg" alt="">
+              </div>
+              <div class="work__subtitle">
+                Разработка единого стиля профиля в инстаграм для бухгалтерской компании
+              </div>
+              <div class="work__desc">
+                8 фев 2017 в 19:37 Подготовили обложку, аватар  и разработали дизайн постов для сообщества. Игорь, спасибо за Ваш заказ!
+              </div>
+              <button class="button button_type_order" data-uk-toggle="target: #callback">
+                <span class="button__text">Заказать</span>
+                <span class="button__background"></span>
+              </button>
+            </li>
+          </ul>
+          <a class="work__arrow uk-position-center-left uk-position-small" href="#" data-uk-slidenav-previous data-uk-slideshow-item="previous" aria-label="Предыдущий слайд"></a>
+          <a class="work__arrow uk-position-center-right uk-position-small" href="#" data-uk-slidenav-next data-uk-slideshow-item="next" aria-label="Следующий слайд"></a>
+        </div>
+        <button class="work__close-btn uk-modal-close" type="button" data-uk-close aria-label="Закрыть окно"></button>
       </div>
     </div>
-  </footer>
-  <div id="work" data-uk-modal>
-    <div class="work uk-modal-dialog uk-modal-body uk-position-relative">
-      <div class="work__title">
-        Оформление постов
+    <div id="callback" data-uk-modal>
+      <div class="callback uk-modal-dialog uk-modal-body uk-position-relative">
+        <form class="contacts-form" aria-label="Форма обратной связи">
+          <div class="contacts-form__row">
+            <label class="contacts-form__icon" for="contacts-name" aria-label="Имя">
+              <svg width="16" height="22">
+                <use xlink:href="/img/sprite.svg#person">
+              </svg>
+            </label>
+            <input class="contacts-form__input uk-input" id="contacts-name" type="text" placeholder="Имя" required>
+          </div>
+          <div class="contacts-form__row">
+            <label class="contacts-form__icon" for="contacts-tel" aria-label="Телефон">
+              <svg width="17" height="17">
+                <use xlink:href="/img/sprite.svg#tel">
+              </svg>
+            </label>
+            <input class="contacts-form__input uk-input" id="contacts-tel" type="tel" placeholder="Телефон" required>
+          </div>
+          <button class="tariff-item__button button button_type_contacts" type="submit">
+            <span class="button__text">отправить</span>
+            <span class="button__background"></span>
+          </button>
+        </form>
+        <button class="callback__close-btn uk-modal-close uk-close-large uk-position-top-right" type="button" data-uk-close aria-label="Закрыть окно"></button>
       </div>
-      <div class="work__slider uk-position-relative uk-visible-toggle" data-uk-slideshow="animation: push">
-        <ul class="uk-slideshow-items">
-          <li>
-            <img src="img/work.jpg" alt="" data-uk-cover>
-          </li>
-          <li>
-            <img src="img/design-group.jpg" alt="" data-uk-cover>
-          </li>
-          <li>
-            <img src="img/design-post.jpg" alt="" data-uk-cover>
-          </li>
-        </ul>
-        <a class="work__arrow uk-position-center-left uk-position-small" href="#" data-uk-slidenav-previous data-uk-slideshow-item="previous" aria-label="Предыдущий слайд"></a>
-        <a class="work__arrow uk-position-center-right uk-position-small" href="#" data-uk-slidenav-next data-uk-slideshow-item="next" aria-label="Следующий слайд"></a>
-      </div>
-      <div class="work__subtitle">
-        Разработка единого стиля профиля в инстаграм для бухгалтерской компании
-      </div>
-      <div class="work__desc">
-        8 фев 2017 в 19:37 Подготовили обложку, аватар  и разработали дизайн постов для сообщества. Игорь, спасибо за Ваш заказ!
-      </div>
-      <button class="button button_type_order">
-        <span class="button__text">Заказать</span>
-        <span class="button__background"></span>
-      </button>
-      <button class="work__close-btn uk-modal-close" type="button" data-uk-close aria-label="Закрыть окно"></button>
     </div>
-</div>
   <script src="bundle.js"></script>
 </body>
 

@@ -1,3 +1,9 @@
+.blog-item {
+  @media (max-width: $breakpoint-small) {
+    text-align: center;    
+  }
+}
+
 .blog-item__book {
   margin-bottom: 10px;
 }

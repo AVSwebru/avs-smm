@@ -14,7 +14,7 @@
   grid-row-gap: 50px;
   margin-bottom: 30px;
   @media (max-width: $breakpoint-medium) {
-    grid-template-columns: auto;
+    grid-template-columns: 100%;
   }
 }
 
@@ -30,30 +30,25 @@
   grid-template-columns: repeat(3, 120px);
   justify-content: center;
   grid-column-gap: 80px;
-  margin-bottom: 19px;
-  padding-bottom: 16px;
-  border-bottom: 1px solid #666;
-  &::before {
-    content: '';
-    position: absolute;
-    bottom: -8px;
-    left: 50%;
-    transform: translateX(-50%) rotate(45deg);
-    width: 16px;
-    height: 16px;
-    background: linear-gradient(-45deg, #4e4e4e 50%, transparent 50%) 50% 50% no-repeat;
-    background-size: cover;
-  }
+  padding-bottom: 30px;
 }
 
 .blog__learnmore {
   @include reset-link;
   padding: 10px 0;
   border-left: 1px solid #515151;
+  &:hover {
+    .blog__learnmore-icon {
+      transform: rotateX(360deg);
+      transition: transform 0.5s;
+    }
+  }
 }
 
 .blog__learnmore-icon {
   fill: #672aa0;
+  transform-origin: 0 50%;
+  transition: transform 0.5s;
 }
 
 .blog__learnmore-text {
@@ -65,7 +60,21 @@
 }
 
 .blog__free-wrapper {
+  position: relative;
+  padding-top: 30px;
   text-align: center;
+  border-top: 1px solid #666;
+  &::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    width: 16px;
+    height: 16px;
+    background: linear-gradient(-45deg, #4e4e4e 50%, transparent 50%) 50% 50% no-repeat;
+    background-size: cover;
+  }
 }
 
 .blog__free {
@@ -75,5 +84,34 @@
   text-transform: uppercase;
   &:hover {
     color: #672aa0;
+  }
+}
+
+.blog__slider-arrow {
+  display: none;
+  position: absolute;
+  top: 40px;
+  &::before {
+    content: '';
+    display: block;
+    width: 18px;
+    height: 18px;
+    border-left: 5px solid rgba(0,0,0,0.5);
+    border-bottom: 5px solid rgba(0,0,0,0.5);
+  }
+  &--left {
+    left: 0;
+    &::before {
+      transform: rotate(45deg);
+    }
+  }
+  &--right {
+    right: 0;
+    &::before {
+      transform: rotate(225deg);
+    }
+  }
+  @media (max-width: $breakpoint-small) {
+    display: block;
   }
 }
