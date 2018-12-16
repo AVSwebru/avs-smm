@@ -2,6 +2,9 @@
   width: 1140px;
   box-sizing: border-box;
   padding: 32px 75px 83px;
+  @media (max-width: $breakpoint-small) {
+    padding: 32px 45px 64px;
+  }
 }
 
 .work__title {
@@ -12,12 +15,23 @@
 }
 
 .work__slider {
-  margin-bottom: 30px;
+  min-height: 770px;
+  @media (max-width: $breakpoint-medium) {
+    min-height: 650px;
+  }
+  @media (max-width: $breakpoint-medium) {
+    min-height: 450px;
+  }
 }
 
 .work__items {
-  // height: auto !important;
-  // padding-top: 75%;
+  min-height: 770px;
+  @media (max-width: $breakpoint-medium) {
+    min-height: 650px;
+  }
+  @media (max-width: $breakpoint-small) {
+    min-height: 520px;
+  }
 }
 
 .work__img-wrapper {
@@ -32,6 +46,12 @@
   svg {
     width: 17px;
     height: 30px;
+  }
+  &--left {
+    left: -58px;
+  }
+  &--right {
+    right: -58px;
   }
   &:hover {
     color: rgba(0,0,0,1);

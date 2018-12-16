@@ -14,7 +14,7 @@
     .menu-btn__line-1 {
       top: 20px;
       transform: rotate(40deg);
-      transition: top 0.5s, transform 0.2s 0.3s;
+      transition: top 0.3s, transform 0.2s 0.3s;
     }
     .menu-btn__line-2 {
       opacity: 0;
@@ -23,7 +23,7 @@
     .menu-btn__line-3 {
       top: 20px;
       transform: rotate(-40deg);
-      transition: top 0.5s, transform 0.2s 0.3s;
+      transition: top 0.3s, transform 0.2s 0.3s;
     }
   }
 }
@@ -39,7 +39,7 @@
 
 .menu-btn__line-1 {
   top: 28px;
-  transition: transform 0.5s, top 0.2s 0.3s;
+  transition: transform 0.3s, top 0.2s 0.3s;
 }
 
 .menu-btn__line-2 {
@@ -49,5 +49,5 @@
 
 .menu-btn__line-3 {
   top: 14px;
-  transition: transform 0.5s, top 0.2s 0.3s;
+  transition: transform 0.3s, top 0.2s 0.3s;
 }

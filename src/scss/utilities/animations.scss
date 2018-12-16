@@ -1,0 +1,23 @@
+@keyframes blinking {
+  50% {
+    background-position-x: 100%;
+  }
+  100% {
+    background-position-x: 0%;
+  }
+}
+
+@keyframes floating-horizontal {
+  25% {
+    transform: translateX(-2%);
+  }
+  75% {
+    transform: translateX(2%);
+  }
+}
+
+@keyframes arrow-vibrating {
+  100% {
+    transform: translateX(5px);
+  }
+}

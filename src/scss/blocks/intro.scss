@@ -5,12 +5,17 @@
   justify-content: flex-end;
   min-height: 650px;
   padding-bottom: 120px;
-  background: #4959a9 linear-gradient(-30deg, #00cec0 0%, #672aa0 99%, #672aa0 100%) 50% 50% no-repeat;
-  background-size: cover;
+  background: #4959a9 linear-gradient(-30deg, #00cec0 0%, #672aa0 99%) 0% 50% no-repeat;
+  background-size: 200% 100%;
   overflow: hidden;
+  animation: 10s ease-out infinite blinking;
   @media (max-width: $breakpoint-medium) {
     min-height: 510px;
     padding-bottom: 50px;
+  }
+  @media (max-width: $breakpoint-small) {
+    min-height: 363px;
+    padding-bottom: 55px;
   }
 }
 
@@ -24,6 +29,11 @@
   @media (max-width: $breakpoint-medium) {
     margin-bottom: 30px;
     font-size: 36px;
+  }
+  @media (max-width: $breakpoint-small) {
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 1;
   }
 }
 
@@ -42,224 +52,53 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0,0,0,.2);
+  background: rgba(0,0,0,.2) url('../../img/social.svg') 13px 315px no-repeat;
+  &:nth-child(1) {
+    animation: 2s ease-out social-1 forwards;
+  }
+  &:nth-child(2) {
+      animation: 2s ease-out 0.5s social-2 forwards;
+  }
+  &:nth-child(3) {
+    animation: 3s ease-out 1s social-3 forwards;
+  }
+  &:nth-child(4) {
+    animation: 3s ease-out 1.5s social-4 forwards;
+  }
 }
 
-// .intro__line-1 {
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   z-index: 1;
-//   width: 38.7%;
-//   height: 100%;
-// }
-//
-// .intro__line-2 {
-//   position: absolute;
-//   top: 28%;
-//   right: 0;
-//   z-index: 2;
-//   width: 34%;
-//   height: 86%;
-// }
-//
-// .intro__figure-1 {
-//   position: absolute;
-//   bottom: 0;
-//   left: -3%;
-//   z-index: 1;
-//   width: 20.5%;
-// }
-//
-// .intro__figure-2 {
-//   position: absolute;
-//   top: 0;
-//   left: 28%;
-//   z-index: 1;
-//   width: 31%;
-// }
-//
-// .intro__figure-3 {
-//   position: absolute;
-//   right: 0;
-//   bottom: 0;
-//   z-index: 1;
-//   width: 25.55%;
-//   height: 100%;
-// }
-//
-// .intro__semicircle-1 {
-//   position: absolute;
-//   top: -2%;
-//   left: 0;
-//   z-index: 1;
-//   width: 4.6vw;
-//   height: 9vw;
-// }
-//
-// .intro__semicircle-2 {
-//   position: absolute;
-//   left: 57%;
-//   bottom: 0;
-//   width: 10vw;
-//   height: 5vw;
-// }
-//
-// .intro__stick-1 {
-//   position: absolute;
-//   top: -4%;
-//   left: 2.5%;
-//   z-index: 2;
-//   width: 5.8vw;
-//   height: 5.7vw;
-//   fill: #fe4c8e;
-// }
-//
-// .intro__stick-2 {
-//   position: absolute;
-//   top: 53%;
-//   left: 1.5%;
-//   z-index: 2;
-//   width: 5.8vw;
-//   height: 5.7vw;
-//   fill: #fff;
-// }
-//
-// .intro__stick-3 {
-//   position: absolute;
-//   top: 45.9%;
-//   right: 18.9%;
-//   z-index: 2;
-//   width: 5.8vw;
-//   height: 5.7vw;
-//   fill: #fe4c8e;
-// }
-//
-// .intro__stick-4 {
-//   position: absolute;
-//   top: 49%;
-//   right: -1.5%;
-//   z-index: 2;
-//   width: 5.8vw;
-//   height: 5.7vw;
-//   fill: #fff;
-// }
-//
-// .intro__circle-1 {
-//   position: absolute;
-//   top: 80%;
-//   left: 9%;
-//   z-index: 2;
-//   width: 5.5vw;
-//   height: 5.5vw;
-//   fill: #07b1f3;
-// }
-//
-// .intro__circle-2 {
-//   position: absolute;
-//   top: -7%;
-//   left: 36.5%;
-//   z-index: 2;
-//   width: 5.5vw;
-//   height: 5.5vw;
-//   fill: #07b1f3;
-// }
-//
-// .intro__circle-3 {
-//   position: absolute;
-//   top: 10%;
-//   left: 81.6%;
-//   z-index: 2;
-//   width: 5.5vw;
-//   height: 5.5vw;
-//   fill:  #fe4c8e;
-// }
-//
-// .intro__ring-1 {
-//   position: absolute;
-//   top: 76%;
-//   left: 6.9%;
-//   z-index: 3;
-//   width: 5vw;
-//   height: 5vw;
-// }
-//
-// .intro__ring-2 {
-//   position: absolute;
-//   top: 57%;
-//   left: 13.7%;
-//   z-index: 3;
-//   width: 2vw;
-//   height: 2vw;
-// }
-//
-// .intro__ring-3 {
-//   position: absolute;
-//   top: 28.6%;
-//   left: 38.8%;
-//   z-index: 3;
-//   width: 2vw;
-//   height: 2vw;
-// }
-//
-// .intro__ring-4 {
-//   position: absolute;
-//   top: 51.5%;
-//   left: 80.1%;
-//   z-index: 3;
-//   width: 2vw;
-//   height: 2vw;
-// }
-//
-// .intro__ring-5 {
-//   position: absolute;
-//   top: 5%;
-//   left: 84.0%;
-//   z-index: 3;
-//   width: 5vw;
-//   height: 5vw;
-// }
-//
-// .intro__rectangle-1-wrapper {
-//   position: absolute;
-//   top: 21%;
-//   left: 14%;
-//   z-index: 3;
-// }
-//
-// .intro__rectangle-1 {
-//   width: 3.2vw;
-//   height: 3.2vw;
-//   color: #07b1f3;
-// }
-//
-// .intro__rectangle-2-wrapper {
-//   position: absolute;
-//   top: 40%;
-//   left: 57%;
-//   z-index: 3;
-// }
-//
-// .intro__rectangle-2 {
-//   width: 3.2vw;
-//   height: 3.2vw;
-//   color: #fe4c8e;
-//   transform: rotate(-57deg);
-// }
-//
-// .intro__rectangle-3-wrapper {
-//   position: absolute;
-//   top: 78%;
-//   right: 10%;
-//   z-index: 3;
-// }
-//
-// .intro__rectangle-3 {
-//   width: 3vw;
-//   height: 3vw;
-//   color: #07b1f3;
-//   transform: rotate(-38deg);
-// }
+@keyframes social-1 {
+  100% {
+    background-position-y: -167px;
+  }
+}
+
+@keyframes social-2 {
+  100% {
+    background-position-y: -210px;
+  }
+}
+
+@keyframes social-3 {
+  100% {
+    background-position-y: -257px;
+  }
+}
+
+@keyframes social-4 {
+  100% {
+    background-position-y: -300px;
+  }
+}
+
+.intro__parallax-scene {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+}
 
 .intro__line-1 {
   position: absolute;
@@ -267,16 +106,26 @@
   left: 0;
   z-index: 1;
   width: 38.7%;
-  height: 100%;
+  @media (max-width: $breakpoint-medium) {
+    width: 57.7%
+  }
+  @media (max-width: $breakpoint-small) {
+    display: none;
+  }
 }
 
 .intro__line-2 {
   position: absolute;
-  top: 28%;
-  right: 0;
+  right: -4%;
+  bottom: 0;
   z-index: 2;
-  width: 34%;
-  height: 86%;
+  width: 32%;
+  @media (max-width: $breakpoint-medium) {
+    width: 57%;
+  }
+  @media (max-width: $breakpoint-small) {
+    display: none;
+  }
 }
 
 .intro__figure-1 {
@@ -285,6 +134,14 @@
   left: -3%;
   z-index: 1;
   width: 20.5%;
+  animation: 7s ease infinite alternate floating-horizontal;
+  @media (max-width: $breakpoint-medium) {
+    width: 30.5%;
+  }
+  @media (max-width: $breakpoint-small) {
+    width: 58%;
+    left: -14%;
+  }
 }
 
 .intro__figure-2 {
@@ -293,154 +150,257 @@
   left: 28%;
   z-index: 1;
   width: 31%;
+  animation: 8s ease 1s infinite alternate floating-horizontal;
+  @media (max-width: $breakpoint-medium) {
+    left: 29%;
+    width: 45%;
+  }
+  @media (max-width: $breakpoint-small) {
+    left: 5%;
+    width: 82%;
+  }
 }
 
 .intro__figure-3 {
   position: absolute;
-  right: 0;
+  right: -2%;
   bottom: 0;
   z-index: 1;
-  width: 25.55%;
-  height: 100%;
+  width: 26.55%;
+  animation: 10s ease 2s infinite alternate floating-horizontal;
+  @media (max-width: $breakpoint-xlarge) {
+    right: -9%;
+    height: auto;
+  }
+  @media (max-width: $breakpoint-medium) {
+    right: -13%;
+    width: 38.55%;
+  }
+  @media (max-width: $breakpoint-small) {
+    right: -55%;
+    width: 74%;
+  }
 }
 
 .intro__semicircle-1 {
   position: absolute;
   top: -2%;
   left: 0;
-  z-index: 1;
+  z-index: 2;
   width: 96px;
   height: 192px;
+  @media (max-width: $breakpoint-medium) {
+    display: none;
+  }
 }
 
 .intro__semicircle-2 {
   position: absolute;
   left: 57%;
   bottom: 0;
+  z-index: 2;
   width: 192px;
   height: 97px;
+  @media (max-width: $breakpoint-medium) {
+    left: 60%;
+  }
+  @media (max-width: $breakpoint-small) {
+    left: 64%;
+    width: 100px;
+    height: 50px;
+  }
 }
 
 .intro__stick-1 {
   position: absolute;
-  top: -4%;
-  left: 2.5%;
+  top: -4% !important;
+  left: 2.5% !important;
   z-index: 2;
   width: 111px;
   height: 111px;
   fill: #fe4c8e;
+  @media (max-width: $breakpoint-medium) {
+    display: none !important;
+  }
 }
 
 .intro__stick-2 {
   position: absolute;
-  top: 53%;
-  left: 1.5%;
+  top: 53% !important;
+  left: 1.5% !important;
   z-index: 2;
   width: 111px;
   height: 111px;
   fill: #fff;
+  @media (max-width: $breakpoint-medium) {
+      display: none !important;
+  }
 }
 
 .intro__stick-3 {
   position: absolute;
-  top: 45.9%;
-  right: 18.9%;
+  top: 45.9% !important;
+  left: 82.3% !important;
   z-index: 2;
   width: 111px;
   height: 111px;
   fill: #fe4c8e;
+  @media (max-width: $breakpoint-medium) {
+      display: none !important;
+  }
 }
 
 .intro__stick-4 {
   position: absolute;
-  top: 49%;
-  right: -1.5%;
+  top: 49% !important;
+  left: 95.5% !important;
   z-index: 2;
   width: 111px;
   height: 111px;
   fill: #fff;
+  @media (max-width: $breakpoint-medium) {
+    display: none !important;
+  }
 }
 
 .intro__circle-1 {
   position: absolute;
-  top: 80%;
-  left: 9%;
+  top: 80% !important;
+  left: 9% !important;
   z-index: 2;
   width: 102px;
   height: 102px;
   fill: #07b1f3;
+  @media (max-width: $breakpoint-medium) {
+    display: none !important;
+  }
 }
 
 .intro__circle-2 {
   position: absolute;
-  top: -7%;
-  left: 36.5%;
+  top: -7% !important;
+  left: 36.5% !important;
   z-index: 2;
   width: 102px;
   height: 102px;
   fill: #07b1f3;
+  @media (max-width: $breakpoint-medium) {
+    top: -12% !important;
+    left: 25.5% !important;
+  }
+  @media (max-width: $breakpoint-small) {
+    display: none !important;
+  }
 }
 
 .intro__circle-3 {
   position: absolute;
-  top: 10%;
-  left: 81.6%;
+  top: 10% !important;
+  left: 81.6% !important;
   z-index: 2;
   width: 102px;
   height: 102px;
   fill:  #fe4c8e;
+  @media (max-width: $breakpoint-medium) {
+    display: none !important;
+  }
 }
 
 .intro__ring-1 {
   position: absolute;
-  top: 76%;
-  left: 6.9%;
+  top: 76% !important;
+  left: 6.9% !important;
   z-index: 3;
   width: 64px;
   height: 64px;
+  @media (max-width: $breakpoint-medium) {
+    display: none !important;
+  }
 }
 
 .intro__ring-2 {
   position: absolute;
-  top: 57%;
-  left: 13.7%;
+  top: 57% !important;
+  left: 13.7% !important;
   z-index: 3;
   width: 28px;
   height: 28px;
+  @media (max-width: $breakpoint-medium) {
+    top: 38% !important;
+    left: 12.7% !important;
+    width: 40px;
+    height: 40px;
+  }
+  @media (max-width: $breakpoint-small) {
+    top: 21% !important;
+    left: 14% !important;
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .intro__ring-3 {
   position: absolute;
-  top: 28.6%;
-  left: 38.8%;
+  top: 28.6% !important;
+  left: 38.8% !important;
   z-index: 3;
   width: 28px;
   height: 28px;
+  @media (max-width: $breakpoint-medium) {
+    top: 90.6% !important;
+    left: 49.8% !important;
+    width: 40px;
+    height: 40px;
+  }
+  @media (max-width: $breakpoint-small) {
+    top: 88% !important;
+    left: 31% !important;
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .intro__ring-4 {
   position: absolute;
-  top: 51.5%;
-  left: 80.1%;
+  top: 51.5% !important;
+  left: 80.1% !important;
   z-index: 3;
   width: 28px;
   height: 28px;
+  @media (max-width: $breakpoint-medium) {
+    top: 28.5% !important;
+    left: 88.1% !important;
+    width: 40px;
+    height: 40px;
+  }
+  @media (max-width: $breakpoint-small) {
+    width: 30px;
+    height: 30px;
+    top: 38% !important;
+    left: 76% !important;
+  }
 }
 
 .intro__ring-5 {
   position: absolute;
-  top: 5%;
-  left: 84.0%;
+  top: 5% !important;
+  left: 84.0% !important;
   z-index: 3;
   width: 64px;
   height: 64px;
+  @media (max-width: $breakpoint-medium) {
+    display: none !important;
+  }
 }
 
 .intro__rectangle-1-wrapper {
   position: absolute;
-  top: 21%;
-  left: 14%;
+  top: 21% !important;
+  left: 14% !important;
   z-index: 3;
+  @media (max-width: $breakpoint-medium) {
+    display: none !important;
+  }
 }
 
 .intro__rectangle-1 {
@@ -451,9 +411,17 @@
 
 .intro__rectangle-2-wrapper {
   position: absolute;
-  top: 40%;
-  left: 57%;
+  top: 40% !important;
+  left: 57% !important;
   z-index: 3;
+  @media (max-width: $breakpoint-medium) {
+    top: 38% !important;
+    left: 42% !important;
+  }
+  @media (max-width: $breakpoint-small) {
+    top: 29% !important;
+    left: 30% !important;
+  }
 }
 
 .intro__rectangle-2 {
@@ -461,13 +429,25 @@
   height: 66px;
   color: #fe4c8e;
   transform: rotate(-57deg);
+  @media (max-width: $breakpoint-small) {
+    width: 35px;
+    height: 35px;
+  }
 }
 
 .intro__rectangle-3-wrapper {
   position: absolute;
-  top: 78%;
-  right: 10%;
+  top: 78% !important;
+  left: 90% !important;
   z-index: 3;
+  @media (max-width: $breakpoint-medium) {
+    top: 48% !important;
+    right: 3% !important;
+  }
+  @media (max-width: $breakpoint-small) {
+    top: 11% !important;
+    left: 59% !important;
+  }
 }
 
 .intro__rectangle-3 {
@@ -475,4 +455,8 @@
   height: 66px;
   color: #07b1f3;
   transform: rotate(-38deg);
+  @media (max-width: $breakpoint-small) {
+    width: 35px;
+    height: 35px;
+  }
 }

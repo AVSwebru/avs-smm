@@ -5,7 +5,7 @@
       let blogSlideshowItems = document.querySelector('.js-blog-slideshow-items');
 
       blogSlideshowItems.classList.add('uk-slideshow-items');
-      let slideshow = UIkit.slideshow(blogSlideshow, {
+      UIkit.slideshow(blogSlideshow, {
         minHeight: 230
       });
     }
