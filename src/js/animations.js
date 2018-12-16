@@ -48,7 +48,7 @@ import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
 
       actionTween
         .from('.js-action-banner', 2, {transformOrigin: '50% 0', transformStyle: 'preserve-3d', ease: Elastic. easeOut.config( 1, 0.3), rotationX: 270})
-        .staggerFromTo('.js-action-title span', 1, {autoAlpha: 0}, {autoAlpha: 1}, '-=0.5')
+        .from('.js-action-title', 0.5, {rotationY: -90})
         .from('.js-action-link', 0.5, {opacity: 0});
 
       const actionScene = new ScrollMagic.Scene({
