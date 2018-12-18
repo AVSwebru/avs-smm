@@ -46,7 +46,7 @@
           </span>
           <span class="feedback-btn__background"></span>
         </button>
-        <button class="menu-btn js-menu-btn" data-uk-toggle="target: .js-menu-btn, .js-menu-adapt; cls: active">
+        <button class="menu-btn js-menu-btn" data-uk-toggle="target: .js-menu-btn, .js-menu-adapt; cls: active" aria-label="Кнопка меню">
           <span class="menu-btn__line menu-btn__line-1 js-menu-btn-line-1"></span>
           <span class="menu-btn__line menu-btn__line-2 js-menu-btn-line-2"></span>
           <span class="menu-btn__line menu-btn__line-3 js-menu-btn-line-3"></span>
@@ -533,8 +533,8 @@
                 </div>
               </div>
               <a class="blog__slider-arrow blog__slider-arrow--left" href="#"
-              data-uk-slideshow-item="previous"></a>
-              <a class="blog__slider-arrow blog__slider-arrow--right" href="#" data-uk-slideshow-item="next"></a>
+              data-uk-slideshow-item="previous" aria-label="Предыдущая инструкция"></a>
+              <a class="blog__slider-arrow blog__slider-arrow--right" href="#" data-uk-slideshow-item="next" aria-label="Следующая инструкция"></a>
             </div>
             <div class="blog__free-wrapper">
               <div class="blog__free-border-left js-blog-left-decor"></div>
@@ -656,20 +656,20 @@
       <div class="callback uk-modal-dialog uk-modal-body uk-position-relative">
         <form class="contacts-form" aria-label="Форма обратной связи">
           <div class="contacts-form__row">
-            <label class="contacts-form__icon" for="contacts-name" aria-label="Имя">
+            <label class="contacts-form__icon" for="callback-name" aria-label="Имя">
               <svg width="16" height="22">
                 <use xlink:href="/img/sprite.svg#person">
               </svg>
             </label>
-            <input class="contacts-form__input uk-input" id="contacts-name" type="text" placeholder="Имя" required>
+            <input class="contacts-form__input uk-input" id="callback-name" type="text" placeholder="Имя" required>
           </div>
           <div class="contacts-form__row">
-            <label class="contacts-form__icon" for="contacts-tel" aria-label="Телефон">
+            <label class="contacts-form__icon" for="callback-tel" aria-label="Телефон">
               <svg width="17" height="17">
                 <use xlink:href="/img/sprite.svg#tel">
               </svg>
             </label>
-            <input class="contacts-form__input uk-input" id="contacts-tel" type="tel" placeholder="Телефон" required>
+            <input class="contacts-form__input uk-input" id="callback-tel" type="tel" placeholder="Телефон" required>
           </div>
           <button class="tariff-item__button button button_type_contacts" type="submit">
             <span class="button__text">отправить</span>
