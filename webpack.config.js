@@ -15,12 +15,6 @@ module.exports = {
     path: PATHS.build,
     filename: 'bundle.js'
   },
-  devServer: {
-    index: 'index.html',
-    compress: true,
-    port: 9000,
-    hot: true
-  },
   module: {
     rules: [
       {
@@ -38,7 +32,7 @@ module.exports = {
             loader: 'file-loader',
             options: {
               name: 'main.css',
-              outputPath: 'css/',
+              outputPath: 'css/'
             }
           },
           {
@@ -47,8 +41,8 @@ module.exports = {
           {
             loader: 'css-loader',
             options: {
-              url: false,
-              minimize: true
+              minimize: true,
+              url: false
             }
           },
           {
@@ -64,20 +58,6 @@ module.exports = {
           },
           {
             loader: 'sass-loader'
-          }
-        ]
-      },
-      {
-        test: /\.css$/,
-        use: [
-          {
-            loader: 'sass-loader',
-            options: {
-              minimize: env === 'production' ? true : false
-            }
-          },
-          {
-            loader: 'postcss-loader'
           }
         ]
       },
