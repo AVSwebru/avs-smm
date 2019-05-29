@@ -19,7 +19,13 @@
   width: calc(100% - 54px);
   height: 46px;
   border: 1px solid #2f2f2f;
+  box-shadow: none;
   &:focus {
     border-color: #2f2f2f;
   }
+}
+
+.contacts-form__policy {
+  margin-top: 15px;
+  line-height: 1.3;
 }
